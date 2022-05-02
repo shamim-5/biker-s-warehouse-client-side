@@ -1,0 +1,7 @@
+.navigation-menu {
+  background-image: url("https://res.cloudinary.com/dskmjlma4/image/upload/v1651461826/warehouse-management/images/header-bg_shr1o8.jpg");
+  opacity: 0.9;
+}
+.nav-link a {
+  margin-right: 6px;
+}

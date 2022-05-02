@@ -1,0 +1,63 @@
+[
+  {
+    "id": "600dc3b5d617e547a0e74cb9",
+    "name": "Mitchell Fitzgerald",
+    "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384082/warehouse-management/images/inventory-all/long/bike_57_s7cegi.jpg",
+    "price": "$10000",
+    "supplier": "Yamaha",
+    "description": "Proident et ea ex laboris nulla laboris. Nulla ut aliquip fugiat tempor veniam sint aliqua reprehenderit tempor Lorem commodo anim.",
+    "address": "48 Flatlands Avenue, Cutter, North Dakota",
+    "company": "Tata Motors"
+  },
+  {
+    "id": "600dc3b5d617e547a0e74cb9",
+    "name": "Mitchell Fitzgerald",
+    "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384086/warehouse-management/images/inventory-all/short/bike_60_d1djwz.jpg",
+    "price": "$15000",
+    "supplier": "Yamaha",
+    "description": "Proident et ea ex laboris nulla laboris. Nulla ut aliquip fugiat tempor veniam sint aliqua reprehenderit tempor Lorem commodo anim.",
+    "address": "48 Flatlands Avenue, Cutter, North Dakota",
+    "company": "Tata Motors"
+  },
+  {
+    "id": "600dc3b5d617e547a0e74cb9",
+    "name": "Mitchell Fitzgerald",
+    "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384084/warehouse-management/images/inventory-all/short/bike_22_hcesye.jpg",
+    "price": "$13000",
+    "supplier": "Yamaha",
+    "description": "Proident et ea ex laboris nulla laboris. Nulla ut aliquip fugiat tempor veniam sint aliqua reprehenderit tempor Lorem commodo anim.",
+    "address": "48 Flatlands Avenue, Cutter, North Dakota",
+    "company": "Tata Motors"
+  },
+  {
+    "id": "600dc3b5d617e547a0e74cb9",
+    "name": "Mitchell Fitzgerald",
+    "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384081/warehouse-management/images/inventory-all/long/bike_44_bqqvzm.jpg",
+    "price": "$9000",
+    "supplier": "Yamaha",
+    "description": "Proident et ea ex laboris nulla laboris. Nulla ut aliquip fugiat tempor veniam sint aliqua reprehenderit tempor Lorem commodo anim.",
+    "address": "48 Flatlands Avenue, Cutter, North Dakota",
+    "company": "Tata Motors"
+  },
+  {
+    "id": "600dc3b5d617e547a0e74cb9",
+    "name": "Mitchell Fitzgerald",
+    "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384086/warehouse-management/images/inventory-all/short/bike_56_oxjtyc.jpg",
+    "price": "$11000",
+    "supplier": "Yamaha",
+    "description": "Proident et ea ex laboris nulla laboris. Nulla ut aliquip fugiat tempor veniam sint aliqua reprehenderit tempor Lorem commodo anim.",
+    "address": "48 Flatlands Avenue, Cutter, North Dakota",
+    "company": "Tata Motors"
+  },
+  {
+    "id": "600dc3b5d617e547a0e74cb9",
+    "name": "Mitchell Fitzgerald",
+    "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384085/warehouse-management/images/inventory-all/short/bike_34_po7bpc.jpg",
+    "price": "$15000",
+    "supplier": "Yamaha",
+    "description": "Proident et ea ex laboris nulla laboris. Nulla ut aliquip fugiat tempor veniam sint aliqua reprehenderit tempor Lorem commodo anim.",
+    "address": "48 Flatlands Avenue, Cutter, North Dakota",
+    "company": "Tata Motors"
+  }
+ 
+]
