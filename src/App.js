@@ -6,9 +6,9 @@ import Blogs from "./Pages/Blogs/Blogs";
 import Inventory from "./Pages/Inventory/Inventory/Inventory";
 import Login from "./Pages/Login/Login/Login";
 import Home from "./Pages/Home/Home/Home";
-import Gallery from "./Pages/Inventory/Gallery/Gallery";
 import About from "./Pages/Home/About/About";
-import Footer from "./Pages/Shared/Footer/Footer"
+import Footer from "./Pages/Shared/Footer/Footer";
+import Gallery from "./Pages/Inventory/Gallery/Gallery/Gallery";
 
 function App() {
   return (
