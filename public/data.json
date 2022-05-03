@@ -2,70 +2,65 @@
  
   {
     "id": "1",
-    "name": "Mitchell Fitzgerald",
+    "name": "TRACER 9 GT",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384080/warehouse-management/images/inventory-all/long/bike_3_uheyzy.jpg",
-    "price": "$15000",
-    "supplier": "Yamaha",
-    "description": "Proident et ea ex laboris nulla laboris. Nulla ut aliquip fugiat tempor veniam sint aliqua reprehenderit tempor Lorem commodo anim.",
-    "address": "48 Flatlands Avenue, Cutter, North Dakota",
-    "company": "Tata Motors"
+    "price": "$12700",
+    "supplier": "BD INTERNATIONAL",
+    "description": "Engine Type: 4 stroke single cylinder, Engine Displacement: 164 cc, Fuel Supply System: Fuel Injection (EFI), Power: 15.0 BHP @ 8000 RPM, Weight: 150kg, Top Speed: 140 K/H ",
+    "company": "YAMAHA"
   },
   {
     "id": "2",
-    "name": "Mitchell Fitzgerald",
+    "name": "HONDA ADVENTURE",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384082/warehouse-management/images/inventory-all/long/bike_7_gbjvmb.jpg",
-    "price": "$15000",
-    "supplier": "Yamaha",
-    "description": "Proident et ea ex laboris nulla laboris. Nulla ut aliquip fugiat tempor veniam sint aliqua reprehenderit tempor Lorem commodo anim.",
-    "address": "48 Flatlands Avenue, Cutter, North Dakota",
-    "company": "Tata Motors"
+    "price": "$13500",
+    "supplier": "BD INTERNATIONAL",
+    "description": "Engine Type: 4 stroke single cylinder, Engine Displacement: 150 cc, Fuel Supply System: Fuel Injection (EFI), Power: 15.0 BHP @ 6000 RPM, Weight: 180kg, Top Speed: 160 K/H ",
+    "company": "HONDA"
   },
   {
     "id": "3",
-    "name": "Mitchell Fitzgerald",
+    "name": "SUZUKI ADV BIKES",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384082/warehouse-management/images/inventory-all/long/bike_8_cw55lt.jpg",
     "price": "$13000",
-    "supplier": "Yamaha",
-    "description": "Proident et ea ex laboris nulla laboris. Nulla ut aliquip fugiat tempor veniam sint aliqua reprehenderit tempor Lorem commodo anim.",
+    "supplier": "BD INTERNATIONAL",
+    "description": "Engine Type: 4 stroke single cylinder, Engine Displacement: 164 cc, Fuel Supply System: Fuel Injection (EFI), Power: 15.0 BHP @ 8000 RPM, Weight: 150kg, Top Speed: 140 K/H ",
     "address": "48 Flatlands Avenue, Cutter, North Dakota",
-    "company": "Tata Motors"
+    "company": "SUZUKI"
   },
   {
     "id": "4",
-    "name": "Mitchell Fitzgerald",
+    "name": "KAWASAKI DUAL SPORT",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384082/warehouse-management/images/inventory-all/long/bike_62_afwjke.jpg",
     "price": "$13000",
-    "supplier": "Yamaha",
-    "description": "Proident et ea ex laboris nulla laboris. Nulla ut aliquip fugiat tempor veniam sint aliqua reprehenderit tempor Lorem commodo anim.",
-    "address": "48 Flatlands Avenue, Cutter, North Dakota",
-    "company": "Tata Motors"
+    "supplier": "BD INTERNATIONAL",
+    "description": "Engine Type: 4 stroke single cylinder, Engine Displacement: 180 cc, Fuel Supply System: Fuel Injection (EFI), Power: 15.0 BHP @ 8000 RPM, Weight: 160kg, Top Speed: 180 K/H ",
+    "company": "KAWASAKI"
   },
   {
     "id": "5",
-    "name": "Mitchell Fitzgerald",
+    "name": "Yamaha MT-10 SP MTN1000D",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384082/warehouse-management/images/inventory-all/long/bike_59_uze8ua.jpg",
     "price": "$11000",
-    "supplier": "Yamaha",
-    "description": "Proident et ea ex laboris nulla laboris. Nulla ut aliquip fugiat tempor veniam sint aliqua reprehenderit tempor Lorem commodo anim.",
-    "address": "48 Flatlands Avenue, Cutter, North Dakota",
-    "company": "Tata Motors"
+    "supplier": "BD INTERNATIONAL",
+    "description": "Engine Type: 4 stroke single cylinder, Engine Displacement: 150 cc, Fuel Supply System: Fuel Injection (EFI), Power: 15.0 BHP @ 7000 RPM, Weight: 140kg, Top Speed: 150 K/H ",
+    "company": "YAMAHA"
   },
   {
     "id": "6",
-    "name": "Mitchell Fitzgerald",
+    "name": "HUSQVARNA ROAD",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384081/warehouse-management/images/inventory-all/long/bike_44_bqqvzm.jpg",
     "price": "$15000",
-    "supplier": "Yamaha",
-    "description": "Proident et ea ex laboris nulla laboris. Nulla ut aliquip fugiat tempor veniam sint aliqua reprehenderit tempor Lorem commodo anim.",
-    "address": "48 Flatlands Avenue, Cutter, North Dakota",
-    "company": "Tata Motors"
+    "supplier": "BD INTERNATIONAL",
+    "description": "Engine Type: 4 stroke single cylinder, Engine Displacement: 164 cc, Fuel Supply System: Fuel Injection (EFI), Power: 15.0 BHP @ 6000 RPM, Weight: 140kg, Top Speed: 169 K/H ",
+    "company": "HUSQVARNA"
   },
   {
     "id": "7",
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384086/warehouse-management/images/inventory-all/short/bike_56_oxjtyc.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -75,7 +70,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384086/warehouse-management/images/inventory-all/short/bike_53_ldyb7d.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -85,7 +80,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384086/warehouse-management/images/inventory-all/short/bike_49_zutpk0.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -95,7 +90,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384086/warehouse-management/images/inventory-all/short/bike_50_nydysu.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -105,7 +100,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384085/warehouse-management/images/inventory-all/short/bike_47_xwm3ok.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -115,7 +110,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384085/warehouse-management/images/inventory-all/short/bike_48_jqvyjb.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -125,7 +120,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384085/warehouse-management/images/inventory-all/short/bike_43_pwqffr.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -135,7 +130,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384085/warehouse-management/images/inventory-all/short/bike_42_bdpfuj.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -145,7 +140,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384085/warehouse-management/images/inventory-all/short/bike_38_zox6ur.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -155,7 +150,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384085/warehouse-management/images/inventory-all/short/bike_4_gqgezh.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -165,7 +160,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384085/warehouse-management/images/inventory-all/short/bike_34_po7bpc.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -175,7 +170,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384084/warehouse-management/images/inventory-all/short/bike_35_qkeqef.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -185,7 +180,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384084/warehouse-management/images/inventory-all/short/bike_36_fyqizx.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -195,7 +190,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384084/warehouse-management/images/inventory-all/short/bike_33_p8afso.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -205,7 +200,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384084/warehouse-management/images/inventory-all/short/bike_23_ytsllq.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -215,7 +210,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384084/warehouse-management/images/inventory-all/short/bike_28_iyb1uc.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -225,7 +220,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384084/warehouse-management/images/inventory-all/short/bike_25_pkbw5e.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -235,7 +230,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384084/warehouse-management/images/inventory-all/short/bike_20_mvd2lm.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -245,7 +240,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384084/warehouse-management/images/inventory-all/short/bike_22_hcesye.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -255,7 +250,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384084/warehouse-management/images/inventory-all/short/bike_2_ltxw85.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -265,7 +260,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384083/warehouse-management/images/inventory-all/short/bike_15_uc9vcj.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -275,7 +270,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384083/warehouse-management/images/inventory-all/short/bike_17_fiuwsi.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -285,7 +280,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384083/warehouse-management/images/inventory-all/short/bike_12_fzkgkj.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -295,7 +290,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384083/warehouse-management/images/inventory-all/short/bike_10_tpjsjv.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -305,7 +300,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384083/warehouse-management/images/inventory-all/short/bike_11_ybrdlx.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -315,7 +310,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384087/warehouse-management/images/inventory-all/short/bike_9_gbsyom.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -325,7 +320,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384086/warehouse-management/images/inventory-all/short/bike_60_d1djwz.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -335,7 +330,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384086/warehouse-management/images/inventory-all/short/bike_6_f4dnvn.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -345,7 +340,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384086/warehouse-management/images/inventory-all/short/bike_58_duggc6.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
@@ -355,7 +350,7 @@
     "name": "",
     "image": "https://res.cloudinary.com/dskmjlma4/image/upload/v1651384086/warehouse-management/images/inventory-all/short/bike_54_avmm4f.jpg",
     "price": "",
-    "supplier": "",
+    "supplier": "BD INTERNATIONAL",
     "description": "",
     "address": "",
     "company": ""
