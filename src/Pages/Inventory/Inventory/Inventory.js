@@ -4,8 +4,6 @@ import useStock from "../../../hooks/useStock";
 
 const Inventory = () => {
   const { inventoryId } = useParams();
-  const [stock] = useStock();
-  console.log(stock);
 
   return (
     <div>
