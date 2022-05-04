@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 
-const useStocks = () => {
-  const [photos, setPhotos] = useState([]);
+const useStock = () => {
+  const [stock, setStock] = useState([]);
   useEffect(() => {
     fetch(`data.json`)
       .then((res) => res.json())
-      .then((data) => setPhotos(data));
+      .then((data) => setStock(data));
   }, []);
-  return [photos];
+  return [stock];
 };
- 
-export default useStocks;
+
+export default useStock;
