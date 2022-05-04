@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Header from "./Pages/Shared/Header/Header";
 import { Route, Routes } from "react-router-dom";
@@ -18,12 +17,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
-        <Route path="/inventory" element={<Inventory></Inventory>}></Route>
+        <Route path="/inventory/:inventoryId" element={<Inventory></Inventory>}></Route>
         <Route path="/gallery" element={<Gallery></Gallery>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
-        <Route path="registration" element={<Registration></Registration>}></Route>
+        <Route path="/registration" element={<Registration></Registration>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

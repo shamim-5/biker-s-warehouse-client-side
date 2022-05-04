@@ -17,7 +17,6 @@ const Header = () => {
         </div>
         <div className="flex md:justify-end justify-center text-blue-900 font-semibold md:text-2xl text-xl nav-link">
           <Link to="home">Home</Link>
-          <Link to="inventory">Inventory</Link>
           <Link to="gallery">Gallery</Link>
           <Link to="about">About</Link>
           <Link to="blogs">Blogs</Link>
