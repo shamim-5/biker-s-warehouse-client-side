@@ -1,10 +1,26 @@
 import React from "react";
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
+import auth from "../../../firebase.init";
 
 const Login = () => {
+  const [signInWithEmailAndPassword, user, loading, error] = useSignInWithEmailAndPassword(auth);
   const navigate = useNavigate();
+
   const navigateRegistration = (event) => {
     navigate("/registration");
+  };
+
+  if (user) {
+    navigate("/home");
+  }
+
+  const handleLogin = (event) => {
+    event.preventDefault();
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+
+    signInWithEmailAndPassword(email, password);
   };
 
   return (
@@ -16,7 +32,7 @@ const Login = () => {
         />
       </div>
       <div className=" p-4 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
-        <form className="space-y-6" action="#">
+        <form className="space-y-6" onSubmit={handleLogin}>
           <h5 className="text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h5>
           <div>
             <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
