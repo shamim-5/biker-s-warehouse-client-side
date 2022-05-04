@@ -1,5 +1,5 @@
 import React from "react";
-import useStock from "../../../Hooks/useStocks";
+import useStock from "../../../../hooks/useStock";
 import Item from "../Item/Item";
 
 const Items = () => {

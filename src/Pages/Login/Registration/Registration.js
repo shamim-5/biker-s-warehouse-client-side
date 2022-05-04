@@ -1,7 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import auth from "../../../firebase.init";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 
 const Registration = () => {
+  const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
+
+  const handleRegister = (event) => {
+    event.preventDefault();
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+
+    createUserWithEmailAndPassword(email, password);
+    console.log(email,password);
+  };
+
   return (
     <div className="container grid md:grid-cols-2 grid-columns-1 place-items-center my-4 gap-4">
       <div>
@@ -11,10 +25,10 @@ const Registration = () => {
         />
       </div>
       <div className=" p-4 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
-        <form className="space-y-6" action="#">
+        <form className="space-y-6" onSubmit={handleRegister}>
           <h5 className="text-xl font-medium text-gray-900 dark:text-white">Sign up to our platform</h5>
           <div>
-            <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+            <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
               Your name
             </label>
             <input
@@ -27,7 +41,7 @@ const Registration = () => {
             />
           </div>
           <div>
-            <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+            <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
               Your email
             </label>
             <input
@@ -40,7 +54,7 @@ const Registration = () => {
             />
           </div>
           <div>
-            <label for="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+            <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
               Your password
             </label>
             <input
@@ -63,7 +77,7 @@ const Registration = () => {
                   required=""
                 />
               </div>
-              <label for="remember" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+              <label htmlFor="remember" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                 Remember me
               </label>
             </div>

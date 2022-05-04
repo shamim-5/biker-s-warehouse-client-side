@@ -2,10 +2,11 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
-   const navigate = useNavigate();
-   const navigateRegistration = (event) => {
-      navigate('/registration');
-   }
+  const navigate = useNavigate();
+  const navigateRegistration = (event) => {
+    navigate("/registration");
+  };
+
   return (
     <div className="container grid md:grid-cols-2 grid-columns-1 place-items-center my-4 gap-4">
       <div>
@@ -18,7 +19,7 @@ const Login = () => {
         <form className="space-y-6" action="#">
           <h5 className="text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h5>
           <div>
-            <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+            <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
               Your email
             </label>
             <input
@@ -31,7 +32,7 @@ const Login = () => {
             />
           </div>
           <div>
-            <label for="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+            <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
               Your password
             </label>
             <input
@@ -54,7 +55,7 @@ const Login = () => {
                   required=""
                 />
               </div>
-              <label for="remember" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+              <label htmlFor="remember" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                 Remember me
               </label>
             </div>
@@ -70,7 +71,11 @@ const Login = () => {
           </button>
           <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
             Not registered?{" "}
-            <Link to="/registration" className="text-blue-700 hover:underline dark:text-blue-500" onClick={navigateRegistration}>
+            <Link
+              to="/registration"
+              className="text-blue-700 hover:underline dark:text-blue-500"
+              onClick={navigateRegistration}
+            >
               Create account
             </Link>
           </div>
