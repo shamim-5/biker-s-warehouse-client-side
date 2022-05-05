@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import useStock from "../../../../hooks/useStock";
 import Photo from "../Photo/Photo";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import {useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Item = ({ item }) => {
   const { id, name, image, description, supplier, price, company } = item;

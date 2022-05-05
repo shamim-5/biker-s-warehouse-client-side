@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./Pages/Shared/Header/Header";
 import { Route, Routes } from "react-router-dom";
 import Blogs from "./Pages/Blogs/Blogs";
-import Inventory from "./Pages/Inventory/Inventory/Inventory";
+import Inventory from "./Pages/Inventory/Inventory/Inventory/Inventory";
 import Login from "./Pages/Login/Login/Login";
 import Home from "./Pages/Home/Home/Home";
 import About from "./Pages/Home/About/About";

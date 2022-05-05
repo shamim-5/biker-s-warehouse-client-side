@@ -1,6 +1,6 @@
 import React from 'react';
-import Banner from '../../Shared/Banner/Banner';
-import Items from '../../Shared/Items/Items/Items';
+import Banner from '../Banner/Banner';
+import Items from '../../Inventory/Items/Items/Items';
 
 const Home = () => {
    return (
