@@ -105,7 +105,9 @@ const Login = () => {
           </div>
         </form>
       </div>
-     <SocialLogin></SocialLogin>
+     <div>
+       <SocialLogin></SocialLogin>
+     </div>
     </div>
   );
 };
