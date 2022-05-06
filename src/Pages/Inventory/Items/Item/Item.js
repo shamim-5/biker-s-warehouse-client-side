@@ -6,7 +6,7 @@ const Item = ({ item }) => {
   const navigate = useNavigate();
 
   const navigateStockUpdate = (inventoryId) => {
-    navigate(`/inventory/${id}`);
+    navigate(`/inventory/${inventoryId}`);
   };
 
   return (

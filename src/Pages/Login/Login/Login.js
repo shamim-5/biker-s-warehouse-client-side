@@ -2,6 +2,7 @@ import React from "react";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] = useSignInWithEmailAndPassword(auth);
@@ -27,9 +28,13 @@ const Login = () => {
   };
 
   return (
-    <div className="container grid md:grid-cols-2 grid-columns-1 place-items-center my-4 gap-4">
+    <div
+      style={{ backgroundColor: "#3A2778" }}
+      className="container grid md:grid-cols-3 grid-columns-1 place-items-center py-4 gap-4"
+    >
       <div>
         <img
+          className="rounded-lg"
           src={`https://res.cloudinary.com/dskmjlma4/image/upload/v1651595671/warehouse-management/images/login_l4kstm.jpg`}
           alt="login"
         />
@@ -100,6 +105,7 @@ const Login = () => {
           </div>
         </form>
       </div>
+     <SocialLogin></SocialLogin>
     </div>
   );
 };
