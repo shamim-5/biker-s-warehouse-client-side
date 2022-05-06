@@ -1,10 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import Loading from "../Loading/Loading";
 
 const Registration = () => {
   const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
+  const navigate = useNavigate();
+
+  if (user) {
+    navigate("/");
+  }
+  if (loading) {
+    return <Loading></Loading>;
+  }
 
   const handleRegister = (event) => {
     event.preventDefault();
@@ -13,7 +22,6 @@ const Registration = () => {
     const password = event.target.password.value;
 
     createUserWithEmailAndPassword(email, password);
-    console.log(email,password);
   };
 
   return (

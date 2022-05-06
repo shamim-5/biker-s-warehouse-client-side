@@ -2,7 +2,7 @@ import React from 'react';
 
 const Loading = () => {
    return (
-     <div className="text-center my-6">
+     <div className="text-center mt-24 mb-96">
        <button
          disabled
          type="button"
