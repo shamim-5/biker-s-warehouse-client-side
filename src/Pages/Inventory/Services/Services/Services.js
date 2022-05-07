@@ -5,11 +5,11 @@ const Services = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("https://thawing-harbor-76948.herokuapp.com/service/")
+    fetch("https://thawing-harbor-76948.herokuapp.com/inventory/")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
-  
+
   return (
     <div>
       <h2 className="text-cyan-900 font-semibold md:text-3xl text-2xl flex justify-center py-4 uppercase">

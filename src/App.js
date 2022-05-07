@@ -11,7 +11,6 @@ import Registration from "./Pages/Login/Registration/Registration";
 import RequireAuth from "./Pages/Login/RequireAuth/RequireAuth";
 import ServiceDetail from "./Pages/Inventory/Services/ServiceDetail/ServiceDetail";
 
-
 function App() {
   return (
     <div>
@@ -20,7 +19,7 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route
-          path="/service/:serviceId"
+          path="/inventory/:id"
           element={
             <RequireAuth>
               <ServiceDetail></ServiceDetail>
