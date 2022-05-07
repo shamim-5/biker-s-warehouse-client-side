@@ -1,17 +1,17 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const Item = ({ item }) => {
-  const { id, name, image, description, supplier, price, company } = item;
+const Service = ({ service }) => {
+  const { _id, name, image, description, supplier, price, company } = service;
   const navigate = useNavigate();
 
-  const navigateStockUpdate = (inventoryId) => {
-    navigate(`/inventory/${inventoryId}`);
+  const navigateToserviceDetail = (id) => {
+    navigate(`/service/${id}`);
   };
 
   return (
     <div>
-      <div className="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+      <div className="flex flex-col services-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
         <img
           className="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
           src={image}
@@ -23,13 +23,13 @@ const Item = ({ item }) => {
           <p>Supplier Name: {supplier} </p>
           <p>Company: {company}</p>
           <h3 className="pb-3">Quantity:</h3>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between services-center">
             <span className="text-3xl font-bold text-gray-900 dark:text-white">{price}</span>
             <button
+              onClick={() => navigateToserviceDetail(_id)}
               className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              onClick={() => navigateStockUpdate(id)}
             >
-              <span>Stock Update</span>
+              <span>Update</span>
             </button>
           </div>
         </div>
@@ -38,4 +38,4 @@ const Item = ({ item }) => {
   );
 };
 
-export default Item;
+export default Service;

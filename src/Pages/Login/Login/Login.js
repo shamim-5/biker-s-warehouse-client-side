@@ -30,7 +30,7 @@ const Login = () => {
   return (
     <div
       style={{ backgroundColor: "#3A2778" }}
-      className="container grid md:grid-cols-3 grid-columns-1 place-items-center py-4 gap-4"
+      className="container grid md:grid-cols-3 grid-columns-1 place-services-center py-4 gap-4"
     >
       <div>
         <img
@@ -68,9 +68,9 @@ const Login = () => {
               required=""
             />
           </div>
-          <div className="flex items-start">
-            <div className="flex items-start">
-              <div className="flex items-center h-5">
+          <div className="flex services-start">
+            <div className="flex services-start">
+              <div className="flex services-center h-5">
                 <input
                   id="remember"
                   type="checkbox"
@@ -105,9 +105,9 @@ const Login = () => {
           </div>
         </form>
       </div>
-     <div>
-       <SocialLogin></SocialLogin>
-     </div>
+      <div>
+        <SocialLogin></SocialLogin>
+      </div>
     </div>
   );
 };

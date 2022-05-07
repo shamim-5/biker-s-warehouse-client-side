@@ -25,7 +25,7 @@ const Registration = () => {
   };
 
   return (
-    <div className="container grid md:grid-cols-2 grid-columns-1 place-items-center my-4 gap-4">
+    <div className="container grid md:grid-cols-2 grid-columns-1 place-services-center my-4 gap-4">
       <div>
         <img
           src={`https://res.cloudinary.com/dskmjlma4/image/upload/v1651595653/warehouse-management/images/registration_ym9ybs.jpg`}
@@ -74,9 +74,9 @@ const Registration = () => {
               required=""
             />
           </div>
-          <div className="flex items-start">
-            <div className="flex items-start">
-              <div className="flex items-center h-5">
+          <div className="flex services-start">
+            <div className="flex services-start">
+              <div className="flex services-center h-5">
                 <input
                   id="remember"
                   type="checkbox"

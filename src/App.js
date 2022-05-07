@@ -2,7 +2,6 @@ import "./App.css";
 import Header from "./Pages/Shared/Header/Header";
 import { Route, Routes } from "react-router-dom";
 import Blogs from "./Pages/Blogs/Blogs";
-import Inventory from "./Pages/Inventory/Inventory/Inventory/Inventory";
 import Login from "./Pages/Login/Login/Login";
 import Home from "./Pages/Home/Home/Home";
 import About from "./Pages/Home/About/About";
@@ -10,6 +9,8 @@ import Footer from "./Pages/Shared/Footer/Footer";
 import Gallery from "./Pages/Inventory/Gallery/Gallery/Gallery";
 import Registration from "./Pages/Login/Registration/Registration";
 import RequireAuth from "./Pages/Login/RequireAuth/RequireAuth";
+import ServiceDetail from "./Pages/Inventory/Services/ServiceDetail/ServiceDetail";
+
 
 function App() {
   return (
@@ -19,10 +20,10 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route
-          path="/inventory/:inventoryId"
+          path="/service/:serviceId"
           element={
             <RequireAuth>
-              <Inventory></Inventory>
+              <ServiceDetail></ServiceDetail>
             </RequireAuth>
           }
         ></Route>
