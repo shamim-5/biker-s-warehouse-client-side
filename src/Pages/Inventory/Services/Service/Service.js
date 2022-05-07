@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import ManageQuantity from "../../ManageQuantity/ManageQuantity";
 
 const Service = ({ service }) => {
   const { _id, name, image, description, supplier, price, company } = service;
@@ -22,7 +23,10 @@ const Service = ({ service }) => {
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{description}</p>
           <p>Supplier Name: {supplier} </p>
           <p>Company: {company}</p>
-          <h3 className="pb-3">Quantity:</h3>
+          <div className="flex font-medium">
+            <h3 className="mr-1">Quantity:</h3>
+            <ManageQuantity></ManageQuantity>
+          </div>
           <div className="flex justify-between services-center">
             <span className="text-3xl font-bold text-gray-900 dark:text-white">{price}</span>
             <button
