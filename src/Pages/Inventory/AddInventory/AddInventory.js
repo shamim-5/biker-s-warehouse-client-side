@@ -6,7 +6,7 @@ const AddInventory = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    const url = `http://localhost:5000/inventory`;
+    const url = `https://thawing-harbor-76948.herokuapp.com/inventory`;
     console.log(url);
     fetch(url, {
       method: "POST",

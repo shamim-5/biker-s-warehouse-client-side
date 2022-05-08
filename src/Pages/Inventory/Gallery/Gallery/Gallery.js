@@ -4,10 +4,10 @@ import Photo from "../Photo/Photo";
 const Gallery = () => {
   const [images, setImages] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/gallery`)
+    fetch(`https://thawing-harbor-76948.herokuapp.com/gallery`)
       .then((res) => res.json())
       .then((data) => setImages(data));
-  },[])
+  }, []);
   return (
     <div className="container">
       <h2 className="text-sky-900 font-semibold md:text-3xl text-2xl flex justify-center py-6 uppercase">

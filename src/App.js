@@ -15,7 +15,6 @@ import AddInventory from "./Pages/Inventory/AddInventory/AddInventory";
 import NotFound from "./Pages/Shared/NotFound/NotFound";
 import { ToastContainer } from "react-toastify";
 
-
 function App() {
   return (
     <div>
@@ -47,14 +46,7 @@ function App() {
             </RequireAuth>
           }
         ></Route>
-        <Route
-          path="/gallery"
-          element={
-            <RequireAuth>
-              <Gallery></Gallery>
-            </RequireAuth>
-          }
-        ></Route>
+        <Route path="/gallery" element={<Gallery></Gallery>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
