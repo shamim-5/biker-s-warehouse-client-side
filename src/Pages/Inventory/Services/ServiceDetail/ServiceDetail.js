@@ -18,27 +18,27 @@ const ServiceDetail = () => {
     }
   };
 
-  //   let newQuantity;
-  //   const onSubmit = (data) => {
-  //     newQuantity = parseInt(data.restock) + quantity;
-  //     setQuantity(newQuantity);
-  //   };
+  let newQuantity;
+  const onSubmit = (data) => {
+    newQuantity = parseInt(data.quantity) + quantity;
+    setQuantity(newQuantity);
+  };
 
   // post quantity into db
-  const onSubmit = (data) => {
-    console.log(data);
+  //   const onSubmit = (data) => {
+  //     console.log(data);
 
-    const url = `http://localhost:5000/inventory`;
-    fetch(url, {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-      .then((res) => res.json())
-      .then((result) => console.log(result));
-  };
+  //     const url = `http://localhost:5000/inventory`;
+  //     fetch(url, {
+  //       method: "POST",
+  //       headers: {
+  //         "content-type": "application/json",
+  //       },
+  //       body: JSON.stringify(data),
+  //     })
+  //       .then((res) => res.json())
+  //       .then((result) => console.log(result));
+  //   };
 
   return (
     <div className="grid md:grid-cols-2 grid-cols-1">
