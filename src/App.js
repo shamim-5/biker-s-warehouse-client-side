@@ -10,6 +10,7 @@ import Gallery from "./Pages/Inventory/Gallery/Gallery/Gallery";
 import Registration from "./Pages/Login/Registration/Registration";
 import RequireAuth from "./Pages/Login/RequireAuth/RequireAuth";
 import ServiceDetail from "./Pages/Inventory/Services/ServiceDetail/ServiceDetail";
+import ManageInventory from "./Pages/Inventory/ManageInventory/ManageInventory";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             </RequireAuth>
           }
         ></Route>
+        <Route path="inventory:/id" element={<ManageInventory></ManageInventory>}></Route>
         <Route
           path="/gallery"
           element={
