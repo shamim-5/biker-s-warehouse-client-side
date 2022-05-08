@@ -10,6 +10,7 @@ const Login = () => {
   const location = useLocation();
 
   let from = location.state?.from?.pathname || "/";
+  let errorElement;
 
   const navigateRegistration = (event) => {
     navigate("/registration");
@@ -18,6 +19,10 @@ const Login = () => {
   if (user) {
     navigate(from, { replace: true });
   }
+  
+    if (error) {
+      errorElement = <p className="text-red-700">Error: {error?.message}</p>;
+    }
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -104,6 +109,7 @@ const Login = () => {
             </Link>
           </div>
         </form>
+        {errorElement}
       </div>
       <div className="my-auto mx-auto pt-6">
         <SocialLogin></SocialLogin>
