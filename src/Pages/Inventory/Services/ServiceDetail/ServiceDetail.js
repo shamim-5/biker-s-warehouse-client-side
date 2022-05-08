@@ -24,7 +24,6 @@ const ServiceDetail = () => {
     setQuantity(newQuantity);
   };
 
-
   return (
     <div className="grid md:grid-cols-2 grid-cols-1">
       <div className="flex flex-col services-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mx-auto my-6">
