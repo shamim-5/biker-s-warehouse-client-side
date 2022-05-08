@@ -32,14 +32,14 @@ const Login = () => {
       style={{ backgroundColor: "#3A2778" }}
       className="container grid md:grid-cols-3 grid-columns-1 place-services-center py-4 gap-4"
     >
-      <div>
+      <div className="my-auto mx-auto">
         <img
           className="rounded-lg"
           src={`https://res.cloudinary.com/dskmjlma4/image/upload/v1651595671/warehouse-management/images/login_l4kstm.jpg`}
           alt="login"
         />
       </div>
-      <div className=" p-4 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
+      <div className="my-auto mx-auto p-4 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
         <form className="space-y-6" onSubmit={handleLogin}>
           <h5 className="text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h5>
           <div>
@@ -105,7 +105,7 @@ const Login = () => {
           </div>
         </form>
       </div>
-      <div>
+      <div className="my-auto mx-auto pt-6">
         <SocialLogin></SocialLogin>
       </div>
     </div>

@@ -27,7 +27,7 @@ const SocialLogin = () => {
           />
         </div>
         <div>
-          <h2 className="ml-3 text-2xl text-white font-semibold">The Motorbike Warehouse</h2>
+          <h2 className="ml-3 text-xl text-white font-semibold">Dhaka Motorbike Warehouse</h2>
         </div>
       </div>
       <button onClick={() => signInWithGoogle()} className="my-4 border rounded py-2 px-1 flex">
