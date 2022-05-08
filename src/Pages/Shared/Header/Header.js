@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <div className="navigation-menu uppercase">
+    <div className="navigation-menu uppercase sticky top-0">
       <div className="container grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-2 py-6 ">
         <div className="text-violet-700 font-semibold md:text-2xl text-xl flex justify-center md:justify-start">
           <img

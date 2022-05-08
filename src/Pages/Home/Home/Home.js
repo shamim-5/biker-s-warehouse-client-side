@@ -4,6 +4,8 @@ import Services from "../../Inventory/Services/Services/Services";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import Loading from "../../Login/Loading/Loading";
+import About from "../About/About";
+import Contact from "../Contact/Contact";
 
 const Home = () => {
   const [user, loading] = useAuthState(auth);
@@ -15,6 +17,8 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <Services></Services>
+      <About></About>
+      <Contact></Contact>
     </div>
   );
 };
