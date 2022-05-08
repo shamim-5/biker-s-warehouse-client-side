@@ -1,15 +1,20 @@
-import useServices from "../../../../hooks/useServices";
+import { useEffect, useState } from "react";
 import Photo from "../Photo/Photo";
 
 const Gallery = () => {
-  const [service] = useServices();
+  const [images, setImages] = useState([]);
+  useEffect(() => {
+    fetch(`https://thawing-harbor-76948.herokuapp.com/gallery`)
+      .then((res) => res.json())
+      .then((data) => setImages(data));
+  },[])
   return (
     <div className="container">
       <h2 className="text-sky-900 font-semibold md:text-3xl text-2xl flex justify-center py-6 uppercase">
         Welcome to gallery
       </h2>
       <div className="grid grid-cols-4 gap-2">
-        {service.slice(6).map((photo) => (
+        {images.map((photo) => (
           <Photo key={photo._id} photo={photo}></Photo>
         ))}
       </div>

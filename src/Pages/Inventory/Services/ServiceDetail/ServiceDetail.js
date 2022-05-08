@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 import { useParams } from "react-router-dom";
 import useServiceDetail from "../../../../hooks/useServiceDetail";
-import ManageQuantity from "../../ManageQuantity/ManageQuantity";
 
 const ServiceDetail = () => {
+  const { register, handleSubmit } = useForm();
   const { id } = useParams();
   const [service] = useServiceDetail(id);
   const { name, image, description, supplier, price, company } = service;
@@ -17,8 +18,30 @@ const ServiceDetail = () => {
     }
   };
 
+  //   let newQuantity;
+  //   const onSubmit = (data) => {
+  //     newQuantity = parseInt(data.restock) + quantity;
+  //     setQuantity(newQuantity);
+  //   };
+
+  // post quantity into db
+  const onSubmit = (data) => {
+    console.log(data);
+
+    const url = `http://localhost:5000/inventory`;
+    fetch(url, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((result) => console.log(result));
+  };
+
   return (
-    <div>
+    <div className="grid md:grid-cols-2 grid-cols-1">
       <div className="flex flex-col services-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mx-auto my-6">
         <img
           className="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
@@ -32,7 +55,7 @@ const ServiceDetail = () => {
           <p>Company: {company}</p>
           <div className="flex font-medium">
             <h3 className="mr-1">Quantity:</h3>
-            <ManageQuantity quantity={quantity}></ManageQuantity>
+            <span>{quantity}</span>
           </div>
           <h3 className="pb-3 font-medium ">
             Sold:<span className="ml-1">{restQuantity}</span>
@@ -47,6 +70,13 @@ const ServiceDetail = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className="grid-cols-1 my-auto mx-auto text-slate-700 shadow-lg py-4 px-4">
+        <h2 className="text-center font-bold text-2xl mb-3">Restock The Item</h2>
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <input type="number" placeholder="restock" {...register("quantity")} />
+          <input className="pl-4 font-semibold rounded-lg " type="submit" value="Update Stock" />
+        </form>
       </div>
     </div>
   );

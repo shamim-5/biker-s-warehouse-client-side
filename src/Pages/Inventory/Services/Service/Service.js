@@ -1,15 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import ManageQuantity from "../../ManageQuantity/ManageQuantity";
 
 const Service = ({ service }) => {
-  const { _id, name, image, description, supplier, price, company } = service;
+  const { _id, name, image, description, supplier, price, company, quantity } = service;
   const navigate = useNavigate();
 
   const navigateToserviceDetail = (id) => {
     navigate(`/inventory/${id}`);
   };
-
+  
   return (
     <div>
       <div className="flex flex-col services-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
@@ -25,7 +24,7 @@ const Service = ({ service }) => {
           <p>Company: {company}</p>
           <div className="flex font-medium">
             <h3 className="mr-1">Quantity:</h3>
-            <ManageQuantity></ManageQuantity>
+            <span>{quantity}</span>
           </div>
           <div className="flex justify-between services-center">
             <span className="text-3xl font-bold text-gray-900 dark:text-white">{price}</span>
