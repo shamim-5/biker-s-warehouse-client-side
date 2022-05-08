@@ -4,7 +4,7 @@ import Photo from "../Photo/Photo";
 const Gallery = () => {
   const [images, setImages] = useState([]);
   useEffect(() => {
-    fetch(`https://thawing-harbor-76948.herokuapp.com/gallery`)
+    fetch(`http://localhost:5000/gallery`)
       .then((res) => res.json())
       .then((data) => setImages(data));
   },[])
