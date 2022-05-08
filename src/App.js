@@ -12,6 +12,7 @@ import RequireAuth from "./Pages/Login/RequireAuth/RequireAuth";
 import ServiceDetail from "./Pages/Inventory/Services/ServiceDetail/ServiceDetail";
 import ManageInventory from "./Pages/Inventory/ManageInventory/ManageInventory";
 import AddInventory from "./Pages/Inventory/AddInventory/AddInventory";
+import NotFound from "./Pages/Shared/NotFound/NotFound";
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/registration" element={<Registration></Registration>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

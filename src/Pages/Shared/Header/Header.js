@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <div className="navigation-menu uppercase">
       <div className="container grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-2 py-6 ">
-        <div className="text-violet-700 font-semibold md:text-3xl text-2xl flex justify-center md:justify-start">
+        <div className="text-violet-700 font-semibold md:text-2xl text-xl flex justify-center md:justify-start">
           <img
             src={
               "https://res.cloudinary.com/dskmjlma4/image/upload/v1651463272/warehouse-management/images/motorcycle_1_gytsbi.png"
@@ -24,15 +24,15 @@ const Header = () => {
           />
           <h2 className="ml-1">Dhaka Motorbike WareHouse </h2>
         </div>
-        <div className="flex md:justify-end justify-center text-blue-900 font-semibold text-xl nav-link">
+        <div className="flex md:justify-end justify-center text-blue-900 font-semibold md:text-xl nav-link">
           <Link to="home">Home</Link>
           <Link to="gallery">Gallery</Link>
           <Link to="about">About</Link>
           <Link to="blogs">Blogs</Link>
           {user && (
             <>
-              <Link to="addinventory">Add</Link>
               <Link to="inventory:/id">Manage</Link>
+              <Link to="addinventory">Add</Link>
             </>
           )}
           {user ? <button onClick={handleSignOut}>SignOut</button> : <Link to="login">Login</Link>}
