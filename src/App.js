@@ -13,6 +13,8 @@ import ServiceDetail from "./Pages/Inventory/Services/ServiceDetail/ServiceDetai
 import ManageInventory from "./Pages/Inventory/ManageInventory/ManageInventory";
 import AddInventory from "./Pages/Inventory/AddInventory/AddInventory";
 import NotFound from "./Pages/Shared/NotFound/NotFound";
+import { ToastContainer } from "react-toastify";
+
 
 function App() {
   return (
@@ -60,6 +62,7 @@ function App() {
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }

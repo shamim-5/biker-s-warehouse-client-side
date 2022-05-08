@@ -1,13 +1,19 @@
-import React from "react";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import React, { useRef } from "react";
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
+import Loading from "../Loading/Loading";
 import SocialLogin from "../SocialLogin/SocialLogin";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
-  const [signInWithEmailAndPassword, user, loading, error] = useSignInWithEmailAndPassword(auth);
+  const emailRef = useRef("");
+  const passwordRef = useRef("");
   const navigate = useNavigate();
   const location = useLocation();
+  const [signInWithEmailAndPassword, user, loading, error] = useSignInWithEmailAndPassword(auth);
+  const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
   let from = location.state?.from?.pathname || "/";
   let errorElement;
@@ -15,21 +21,35 @@ const Login = () => {
   const navigateRegistration = (event) => {
     navigate("/registration");
   };
+  if (loading || sending) {
+    return <Loading></Loading>;
+  }
 
   if (user) {
     navigate(from, { replace: true });
   }
-  
-    if (error) {
-      errorElement = <p className="text-red-700">Error: {error?.message}</p>;
-    }
+
+  if (error) {
+    errorElement = <p className="text-red-700">Error: {error?.message}</p>;
+  }
 
   const handleLogin = (event) => {
     event.preventDefault();
-    const email = event.target.email.value;
-    const password = event.target.password.value;
+    const email = emailRef.current.value;
+    const password = passwordRef.current.value;
 
     signInWithEmailAndPassword(email, password);
+    console.log(email, password);
+  };
+
+  const resetPassword = async () => {
+    const email = emailRef.current.value;
+    if (email) {
+      await sendPasswordResetEmail(email);
+      toast("Sent email");
+    } else {
+      toast("please enter your email address");
+    }
   };
 
   return (
@@ -52,6 +72,7 @@ const Login = () => {
               Your email
             </label>
             <input
+              ref={emailRef}
               type="email"
               name="email"
               id="email"
@@ -65,6 +86,7 @@ const Login = () => {
               Your password
             </label>
             <input
+              ref={passwordRef}
               type="password"
               name="password"
               id="password"
@@ -88,9 +110,12 @@ const Login = () => {
                 Remember me
               </label>
             </div>
-            <Link to="/register" className="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500">
-              Lost Password?
-            </Link>
+            <button
+              onClick={resetPassword}
+              className="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500"
+            >
+              Reset Password?
+            </button>
           </div>
           <button
             type="submit"
