@@ -10,8 +10,8 @@ const Contact = () => {
             <h3 className="text-slate-900 mr-2 ">Address:</h3>
           </div>
           <div className="text-slate-700">
-            <p>Dhaka Motorbike Warehouse</p>
-            <p>149-151 Motizheel, Dhaka, Bangladesh</p>
+            <p>The Motorbike Warehouse</p>
+            <p>149-151 Motizheel, The, Bangladesh</p>
           </div>
         </div>
         <div className="flex my-2">
@@ -19,7 +19,7 @@ const Contact = () => {
             <h3 className="text-slate-900 mr-2 ">Email:</h3>
           </div>
           <div className="text-cyan-700">
-            <p>info@dhakamotorbikewarehouse.com</p>
+            <p>info@Themotorbikewarehouse.com</p>
           </div>
         </div>
         <div className="flex my-2">

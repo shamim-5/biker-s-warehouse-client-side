@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="container navigation-menu py-6 text-center">
       <p>
         <small>
-          <FontAwesomeIcon className="text-slate-700" icon={faCopyright} /> 2022 Dhaka Motorbike WareHouse. All Rights
+          <FontAwesomeIcon className="text-slate-700" icon={faCopyright} /> 2022 The Motorbike WareHouse. All Rights
           Reserved.
         </small>
       </p>

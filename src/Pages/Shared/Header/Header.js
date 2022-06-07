@@ -22,10 +22,12 @@ const Header = () => {
             }
             alt=""
           />
-          <h2 className="ml-1">Dhaka Motorbike WareHouse </h2>
+          <Link to="/" className="ml-1">
+            The Motorbike WareHouse{" "}
+          </Link>
         </div>
         <div className="flex md:justify-end justify-center text-blue-900 font-semibold md:text-xl nav-link">
-          <Link to="home">Home</Link>
+          <Link to="/">Home</Link>
           <Link to="gallery">Gallery</Link>
           <Link to="about">About</Link>
           <Link to="blogs">Blogs</Link>

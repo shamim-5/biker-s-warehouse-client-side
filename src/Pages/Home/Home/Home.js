@@ -8,7 +8,7 @@ import About from "../About/About";
 import Contact from "../Contact/Contact";
 
 const Home = () => {
-  const [user, loading] = useAuthState(auth);
+  const [loading] = useAuthState(auth);
 
   if (loading) {
     return <Loading></Loading>;

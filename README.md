@@ -1,6 +1,6 @@
-# WEBSITE NAME: DHAKA MOTORBIKE WAREHOUSE
+# WEBSITE NAME: THE MOTORBIKE WAREHOUSE
 
-## [Private repo link](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-mss38)
+## [Public repo link](https://github.com/shamim-5/biker-s-warehouse-client-side)
 # Live Website: [warehouse-management-1a464.web.app](https://warehouse-management-1a464.web.app)
 
 --------------
